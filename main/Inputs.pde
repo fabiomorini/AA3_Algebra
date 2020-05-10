@@ -12,12 +12,12 @@ void keyPressed(){
   }
   
   if(keyCode == DOWN && released){
-    camara.camaraPos.y -= 1.5708;
+    camara.camaraPos.y += 1.5708;
     released = false;
   }
   
   if(keyCode == UP && released){
-    camara.camaraPos.y += 1.5708;
+    camara.camaraPos.y -= 1.5708;
     released = false;
   }
 }
