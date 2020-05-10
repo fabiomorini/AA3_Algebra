@@ -12,5 +12,4 @@ void draw(){
   camara.camaraRotation();
   fill(0,255,0); 
   box(250,250,250);
-
 }
