@@ -11,6 +11,7 @@ class Orbita{
   
   void executeOrbita(){
     drawOrbita();
+    bezier.pintar_curva();
     pushMatrix();
     rotateX(180);
     translate(-500,0,0);
