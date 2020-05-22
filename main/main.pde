@@ -11,6 +11,8 @@ void setup(){
 }
 
 void draw(){
+  noFill();
+  noStroke();
   background(8,22,42);
   lights();
   camara.camaraRotation();
