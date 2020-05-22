@@ -5,8 +5,16 @@ void setup(){
   planeta = new Planeta();
   esfera = new Esfera();
   orbita = new Orbita();
+  
+  //Indicamos los puntos que tendra Bezier //<>//
+  setPuntosBezier(new PVector(-600,0),
+  new PVector(850,-2000),new PVector(850,2000),new PVector(-600,0));
+  
+  //Llamada al constructor de la curva
+  bezier = new Bezier(puntoBezier, colorBezier, numPuntosBezier);
+  
   frameRate(60);
-  planeta.setCoordsPlaneta(); //<>//
+  planeta.setCoordsPlaneta();
   planeta.createPlanetaShapes();
 }
 
