@@ -32,6 +32,10 @@ void keyPressed(){
       camara.cameraController -= 1;
     }
   }
+  
+  if(keyCode == BACKSPACE && released){
+    camara.pausaCamara = !camara.pausaCamara;
+  }
 }
 
 void keyReleased(){
