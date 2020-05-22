@@ -4,4 +4,8 @@ class Esfera{
     sphere(tamEsfera);
     noFill();
   }
+  
+  void seguirBezier(){
+    
+  }
 }

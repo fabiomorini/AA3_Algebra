@@ -1,8 +1,6 @@
 //Codigo que implementa curva de Bezier que tiene continuidad C1,
 //que es mejor que la C0 de la curva de interpolacion
 
-
-
 //Clases
 class Bezier{
   //Atributos
