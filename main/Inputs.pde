@@ -33,7 +33,7 @@ void keyPressed(){
     }
   }
   
-  if(keyCode == BACKSPACE && released){
+  if(keyCode == 32 && released){
     camara.pausaCamara = !camara.pausaCamara;
   }
 }
