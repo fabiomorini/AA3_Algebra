@@ -7,8 +7,8 @@ void setup(){
   orbita = new Orbita();
   
   //Indicamos los puntos que tendra Bezier //<>//
-  setPuntosBezier(new PVector(-1000,0),
-  new PVector(-7500,-7500),new PVector(7500,7500),new PVector(-1000,0));
+  setPuntosBezier(new PVector(-600,0),
+  new PVector(850,-2000),new PVector(850,2000),new PVector(-600,0));
   
   //Llamada al constructor de la curva
   bezier = new Bezier(puntoBezier, colorBezier, numPuntosBezier);

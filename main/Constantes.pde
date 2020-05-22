@@ -9,7 +9,7 @@ static int screenY = 1000;
 
 int tamPlaneta = 200;
 int tamEsfera = 100;
-float numPuntosBezier = 100.0; //Cuantos puntos queremos pintar?
+float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?
 
 color colorBezier = color(255,255,0);
 PVector[] puntoBezier = new PVector[4];
