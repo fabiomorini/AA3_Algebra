@@ -1,5 +1,4 @@
 class Planeta{
-  int tam = 200;
   PShape planetaA,planetaB,planetaC,planetaD,planetaE,planetaF;
   PVector[][] planetaVertexCoords = new PVector[2][4];
   
@@ -13,14 +12,14 @@ class Planeta{
   }
 
   void setCoordsPlaneta(){
-    planetaVertexCoords[0][0] = new PVector(-1,-1,-1).mult(tam); //A0/D0/F0 //<>//
-    planetaVertexCoords[0][1] = new PVector(1,-1,-1).mult(tam); //A1/B1/F1
-    planetaVertexCoords[0][2] = new PVector(1,-1,1).mult(tam); //A2/B0/C1
-    planetaVertexCoords[0][3] = new PVector(-1,-1,1).mult(tam); //A3/C0/D3
-    planetaVertexCoords[1][0] = new PVector(-1,1,-1).mult(tam); //E0/D1/F3
-    planetaVertexCoords[1][1] = new PVector(1,1,-1).mult(tam); //B2/E1/F2
-    planetaVertexCoords[1][2] = new PVector(1,1,1).mult(tam); //B3/C2/E2
-    planetaVertexCoords[1][3] = new PVector(-1,1,1).mult(tam); //C3/D2/E3
+    planetaVertexCoords[0][0] = new PVector(-1,-1,-1).mult(tamPlaneta); //A0/D0/F0 //<>//
+    planetaVertexCoords[0][1] = new PVector(1,-1,-1).mult(tamPlaneta); //A1/B1/F1
+    planetaVertexCoords[0][2] = new PVector(1,-1,1).mult(tamPlaneta); //A2/B0/C1
+    planetaVertexCoords[0][3] = new PVector(-1,-1,1).mult(tamPlaneta); //A3/C0/D3
+    planetaVertexCoords[1][0] = new PVector(-1,1,-1).mult(tamPlaneta); //E0/D1/F3
+    planetaVertexCoords[1][1] = new PVector(1,1,-1).mult(tamPlaneta); //B2/E1/F2
+    planetaVertexCoords[1][2] = new PVector(1,1,1).mult(tamPlaneta); //B3/C2/E2
+    planetaVertexCoords[1][3] = new PVector(-1,1,1).mult(tamPlaneta); //C3/D2/E3
   }
   
   void createPlanetaShapes(){
