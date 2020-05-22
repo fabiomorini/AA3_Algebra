@@ -60,7 +60,7 @@ class Bezier{
     //p(u) = c0 + c2*u2 + c3*u3
     //x(u)...
     //y(u)...
-    punto.x = coeficientes[0].x + coeficientes[1].x * u + coeficientes[2].x * u*u + coeficientes[3].x * u*u*u; 
+    punto.x = coeficientes[0].x + coeficientes[1].x * u + coeficientes[2].x * u*u + coeficientes[3].x * u*u*u;
     punto.y = coeficientes[0].y + coeficientes[1].y * u + coeficientes[2].y * u*u + coeficientes[3].y * u*u*u;
     
     return punto;
