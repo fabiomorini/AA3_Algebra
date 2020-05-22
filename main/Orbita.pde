@@ -14,8 +14,7 @@ class Orbita{
     pushMatrix();
     rotateX(180);
     bezier.pintar_curva();
-    translate(-500,0,0);
-    esfera.drawEsfera();
+    esfera.seguirBezier();
     popMatrix();
   }
 }
