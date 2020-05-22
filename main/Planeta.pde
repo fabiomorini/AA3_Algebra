@@ -11,7 +11,7 @@ class Planeta{
     shape(planetaE);
     shape(planetaF);
   }
-  
+
   void setCoordsPlaneta(){
     planetaVertexCoords[0][0] = new PVector(-1,-1,-1).mult(tam); //A0/D0/F0 //<>//
     planetaVertexCoords[0][1] = new PVector(1,-1,-1).mult(tam); //A1/B1/F1
