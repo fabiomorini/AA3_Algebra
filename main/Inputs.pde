@@ -36,6 +36,10 @@ void keyPressed(){
   if(keyCode == 32 && released){
     camara.pausaCamara = !camara.pausaCamara;
   }
+  
+  if(keyCode == '1' && released){
+    ui.debugMenu = !ui.debugMenu;
+  }
 }
 
 void keyReleased(){
