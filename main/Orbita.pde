@@ -32,8 +32,9 @@ class Orbita{
   void dibuja_perro(){
     pushMatrix();
     translate(1000,1000);
-    rotateY(180 + rot);
-    rotateZ(180 + rot);
+    rotateX(180);
+    rotateY(3.4);
+    //rotateZ(180 + rot);
     scale(10);
     fill(255);
     shape(dog);
