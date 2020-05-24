@@ -7,13 +7,13 @@ void setup(){
   luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-  espacio = new Espacio(); //<>// //<>//
+  espacio = new Espacio(); //<>// //<>// //<>//
   //Indicamos los puntos que tendra Bezier
-  setPuntosBezier1(new PVector(0,-500),
-  new PVector(650,-500),new PVector(650,500),new PVector(0,500));
+  setPuntosBezier1(new PVector(0,-ellipseY),
+  new PVector(ellipseX,-ellipseY),new PVector(ellipseX,ellipseY),new PVector(0,ellipseY));
   
-  setPuntosBezier2(new PVector(0,500),
-  new PVector(-650,500),new PVector(-650,-500),new PVector(0,-500));
+  setPuntosBezier2(new PVector(0,ellipseY),
+  new PVector(-ellipseX,ellipseY),new PVector(-ellipseX,-ellipseY),new PVector(0,-ellipseY));
   
   //Llamada al constructor de la curva
   bezier1 = new Bezier(puntoBezier1, colorBezier, numPuntosBezier);
@@ -21,7 +21,7 @@ void setup(){
   
   planetaImg = loadImage("doge.jpg");
   lunaImg = loadImage("nic.jpg");
-  espacioImg = loadImage("shrek.jpg");
+  espacioImg = loadImage("espacio.jpg");
   dog = loadShape("dog.obj");
   frameRate(60);
 }
