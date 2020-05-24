@@ -13,8 +13,7 @@ class Planeta{
   void draw_planeta(){ // dibuja la esfera que representa el planeta
     planeta_shape();
     pushMatrix();
-    rot += 1;
-    rotateY(rot);
+    rotateY(-rot * 0.2);
     shape(planeta);
     popMatrix();
   }
