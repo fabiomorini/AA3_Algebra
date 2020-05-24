@@ -8,8 +8,8 @@ UI ui;
 static int screenX = 1000;
 static int screenY = 1000;
 
-int tamPlaneta = 200;
-int tamEsfera = 100;
+int tamPlaneta = 50;
+int tamEsfera = 50;
 float incT = 0.04;
 float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?
 
