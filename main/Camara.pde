@@ -44,5 +44,10 @@ class Camara{
 }
 
 void mouseWheel(MouseEvent event) { //La rueda del raton amplia o aleja la camara
-  camara.mouseZoom -= event.getCount()*80;
+  if(camara.mouseZoom <= 920){
+      camara.mouseZoom -= event.getCount()*80;
+  }
+  else{
+    camara.mouseZoom = 920;
+  }
 }
