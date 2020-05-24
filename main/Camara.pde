@@ -9,28 +9,28 @@ class Camara{
     if(cameraController == 0 && pausaCamara){
       translate(width/2, height/2, mouseZoom); //posicion de la pecera respecto a la camara 
       rotateX(camaraX = camaraPos.x-0.8); //Rotar la pecera para que la proyeccion sea isometrica
-      rotateY(camaraY = camaraPos.y+map(-mouseX/10,0,width,0,-45)); //La camara rota junto al movimiento en eje X del mouse
+      rotateY(camaraY = camaraPos.y+map(-mouseX/10,0,width,0,-90)); //La camara rota junto al movimiento en eje X del mouse
       rotateZ(camaraZ = camaraPos.z);
     }
     
     else if(cameraController == 1 && pausaCamara){
       translate(width/2, height/2, mouseZoom); //posicion de la pecera respecto a la camara 
       rotateX(camaraX = camaraPos.y); //Rotar la pecera para que la proyeccion sea isometrica
-      rotateY(camaraY =camaraPos.x+map(mouseX/10,0,width,0,-45)); //La camara rota junto al movimiento en eje X del mouse
+      rotateY(camaraY =camaraPos.x+map(mouseX/10,0,width,0,-90)); //La camara rota junto al movimiento en eje X del mouse
       rotateZ(camaraZ = camaraPos.z);
     }
     
     else if(cameraController == 2 && pausaCamara){
       translate(width/2, height/2, mouseZoom); //posicion de la pecera respecto a la camara 
       rotateX(camaraX = camaraPos.x-0.8); //Rotar la pecera para que la proyeccion sea isometrica
-      rotateY(camaraY = camaraPos.y+map(-mouseX/10,0,width,0,-45)); //La camara rota junto al movimiento en eje X del mouse
+      rotateY(camaraY = camaraPos.y+map(-mouseX/10,0,width,0,-90)); //La camara rota junto al movimiento en eje X del mouse
       rotateZ(camaraZ = camaraPos.z);
     }
     
     else if(cameraController == 3 && pausaCamara){
       translate(width/2, height/2, mouseZoom); //posicion de la pecera respecto a la camara 
       rotateX(camaraX = camaraPos.y); //Rotar la pecera para que la proyeccion sea isometrica
-      rotateY(camaraY = camaraPos.x+map(-mouseX/10,0,width,0,-45)); //La camara rota junto al movimiento en eje X del mouse
+      rotateY(camaraY = camaraPos.x+map(-mouseX/10,0,width,0,-90)); //La camara rota junto al movimiento en eje X del mouse
       rotateZ(camaraZ = camaraPos.z);
     }
     
