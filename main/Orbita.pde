@@ -13,8 +13,15 @@ class Orbita{
     drawOrbita();
     pushMatrix();
     rotateX(180);
-    bezier.pintar_curva();
-    esfera.seguirBezier();
+    bezier1.pintar_curva();
+    bezier2.pintar_curva();
+    
+    if(!esfera.mitad){
+      esfera.seguirBezier1();
+    }
+    else{
+      esfera.seguirBezier2();
+    }
     popMatrix();
   }
 }

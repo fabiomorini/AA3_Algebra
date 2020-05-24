@@ -5,13 +5,18 @@ void setup(){
   planeta = new Planeta();
   esfera = new Esfera();
   orbita = new Orbita();
+  ui = new UI();
   
   //Indicamos los puntos que tendra Bezier //<>//
-  setPuntosBezier(new PVector(-600,0),
-  new PVector(850,-2000),new PVector(850,2000),new PVector(-600,0));
+  setPuntosBezier1(new PVector(0,500),
+  new PVector(-650,500),new PVector(-650,-500),new PVector(0,-500));
+  
+  setPuntosBezier2(new PVector(0,-500),
+  new PVector(650,-500),new PVector(650,500),new PVector(0,500));
   
   //Llamada al constructor de la curva
-  bezier = new Bezier(puntoBezier, colorBezier, numPuntosBezier);
+  bezier1 = new Bezier(puntoBezier1, colorBezier, numPuntosBezier);
+  bezier2 = new Bezier(puntoBezier2, colorBezier, numPuntosBezier);
   
   frameRate(60);
   planeta.setCoordsPlaneta();
@@ -23,10 +28,7 @@ void draw(){
   noStroke();
   background(8,22,42);
   lights();
-  text("Moon X: " + esfera.punto.x,30,30);
-  text("Moon Y: " + esfera.punto.y,30,50);
-  text("u: " + esfera.u,30,70);
-  text("Incremento de u: " + esfera.incremento_de_u,30,90);
+  ui.drawUI();
   camara.camaraRotation();
   planeta.drawPlaneta();
   fill(0,255,0); 
