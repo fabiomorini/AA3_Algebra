@@ -1,5 +1,4 @@
 PVector posPerro = new PVector(0,0,0);
-PVector velPerro = new PVector(0,0,0);
 PVector accelPerro = new PVector(0,0,0);
 int separacion = 500;
 
