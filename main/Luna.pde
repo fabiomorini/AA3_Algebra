@@ -32,6 +32,9 @@ class Luna{
     
     pushMatrix();
     translate(punto.x,punto.y,0);
+    rot += 0.01;
+    rotateX(-10);
+    rotateY(10+rot);
     drawLuna();
     popMatrix();
     if(u1 >= 1.0){
@@ -49,6 +52,10 @@ class Luna{
     
     pushMatrix();
     translate(punto.x,punto.y,0);
+    rot += 0.01;
+    rotateX(-10);
+    rotateY(10+rot);
+
     drawLuna();
     popMatrix();
     if(u2 >= 1.0){

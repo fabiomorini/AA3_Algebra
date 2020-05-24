@@ -15,6 +15,7 @@ int tamPlaneta = 300;
 int tamLuna = 150;
 
 float incT = 0.04;
+float rot = 1;
 float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?
 
 float ellipseX = 650;

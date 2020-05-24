@@ -7,7 +7,7 @@ void setup(){
   luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-   //<>// //<>//
+   //<>// //<>// //<>//
   //Indicamos los puntos que tendra Bezier //<>//
   setPuntosBezier1(new PVector(0,-500),
   new PVector(650,-500),new PVector(650,500),new PVector(0,500));
@@ -20,7 +20,7 @@ void setup(){
   bezier2 = new Bezier(puntoBezier2, colorBezier, numPuntosBezier);
   
   planetaImg = loadImage("doge.jpg");
-  lunaImg = loadImage("stapler.jpg");
+  lunaImg = loadImage("nic.jpg");
   frameRate(60);
 }
 
