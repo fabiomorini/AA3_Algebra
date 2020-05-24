@@ -13,6 +13,9 @@ int tamEsfera = 100;
 float incT = 0.04;
 float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?
 
+float ellipseX = 650;
+float ellipseY = 500;
+
 color colorBezier = color(255,255,0);
 PVector[] puntoBezier1 = new PVector[4];
 PVector[] puntoBezier2 = new PVector[4];
