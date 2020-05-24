@@ -12,4 +12,4 @@ Un objeto persigue a la luna flotando por el espacio mediante el calculo entre d
 Un sistema de colisiones controlará la colisión entre el objeto flotante y la luna. Tras la colisión, empezará a sonar una pista de audio confirmando la colisión.
 
 Narrativa seleccionada:
-La narrativa es del tipo meme, aportando como textura al planeta la cara de un perro raza Shiba, una luna con la tetura de Nickolas Kage, el modelo de otro perro raza Shiba y una canción carácteristica que siempre suele acompañarle.
+La narrativa es del tipo meme, aportando como textura al planeta la cara de un perro raza Shiba, una luna con la tetura de Nicolas Cage, el modelo de otro perro raza Shiba y una canción carácteristica que siempre suele acompañarle.
