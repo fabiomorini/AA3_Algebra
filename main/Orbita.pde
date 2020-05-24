@@ -41,12 +41,20 @@ class Orbita{
     PVector pos = haciaPunto(luna.punto);
     
     pushMatrix();
-    //translate(1000,1000);
+    if((posPerro.x <= pos.x && posPerro.x+tamPerro >= pos.x+tamLuna) ||
+    (posPerro.x >= pos.x && posPerro.x+tamPerro <= pos.x+tamLuna)){
+      pos.x -= 10;
+    }
+    if((posPerro.y <= pos.y && posPerro.y+tamPerro >= pos.y+tamLuna) ||
+    (posPerro.y >= pos.y && posPerro.y+tamPerro <= pos.y+tamLuna)){
+      pos.y -= 10;
+    }
+    
     translate(pos.x,pos.y);
     rotateX(180);
     rotateY(3.4);
     rotateZ(180 + rot);
-    scale(10);
+    scale(tamPerro);
     fill(255);
     shape(dog);
     popMatrix();

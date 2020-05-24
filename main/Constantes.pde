@@ -16,6 +16,7 @@ PShape dog;
 
 int tamPlaneta = 300;
 int tamLuna = 150;
+int tamPerro = 10;
 
 float incT = 0.04;
 float rot = 1;
