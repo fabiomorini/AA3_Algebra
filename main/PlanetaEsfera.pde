@@ -23,7 +23,7 @@ class Esfera{
     drawEsfera();
     popMatrix();
     
-    if(u == 1.0){
+    if(u >= 1.0){
       u = 0;
     }
   }
