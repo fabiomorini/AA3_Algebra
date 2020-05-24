@@ -15,7 +15,7 @@ class Esfera{
   }
   
   void seguirBezier1(){
-    incremento_de_u1 = 1.0/bezier1.numero_de_puntos_a_pintar;
+    incremento_de_u1 = velocidadEsfera/bezier1.numero_de_puntos_a_pintar;
     u1 += incremento_de_u1;
     
     punto = bezier1.calcula_un_punto(u1);
@@ -32,7 +32,7 @@ class Esfera{
   }
   
   void seguirBezier2(){
-    incremento_de_u2 = 1.0/bezier2.numero_de_puntos_a_pintar;
+    incremento_de_u2 = velocidadEsfera/bezier2.numero_de_puntos_a_pintar;
     u2 += incremento_de_u2;
     
     punto = bezier2.calcula_un_punto(u2);

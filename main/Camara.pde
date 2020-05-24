@@ -1,5 +1,5 @@
 class Camara{
-  float mouseZoom = 0; //Zoom por defecto de la cámara
+  float mouseZoom = -1000; //Zoom por defecto de la cámara
   PVector camaraPos = new PVector(0,-18,0);
   int cameraController = 0; //Ayuda a corregir el eje X del mouse cuando cambiamos la cara del cubo a la que miramos
   boolean pausaCamara = true;
