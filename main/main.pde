@@ -4,10 +4,10 @@ void setup(){
   fullScreen(P3D);
   camara = new Camara();
   planeta = new Planeta();
-  esfera = new Esfera();
+  luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-   //<>//
+   //<>// //<>//
   //Indicamos los puntos que tendra Bezier //<>//
   setPuntosBezier1(new PVector(0,500),
   new PVector(-650,500),new PVector(-650,-500),new PVector(0,-500));
@@ -31,6 +31,7 @@ void draw(){
   lights();
   ui.drawUI();
   camara.camaraRotation();
-  planeta.drawPlaneta();
+  //planeta.drawPlaneta();
+  planeta.draw_planeta();
   orbita.executeOrbita();
 }

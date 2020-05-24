@@ -1,4 +1,5 @@
 class Planeta{
+  
   PShape planetaA,planetaB,planetaC,planetaD,planetaE,planetaF;
   PVector[][] planetaVertexCoords = new PVector[2][4];
   
@@ -11,6 +12,12 @@ class Planeta{
     shape(planetaF);
   }
 
+  void draw_planeta(){ // dibuja la esfera que representa el planeta
+    fill(255);
+    sphere(tamPlaneta); 
+    noFill();
+  }
+  
   void setCoordsPlaneta(){
     planetaVertexCoords[0][0] = new PVector(-1,-1,-1).mult(tamPlaneta); //A0/D0/F0 //<>//
     planetaVertexCoords[0][1] = new PVector(1,-1,-1).mult(tamPlaneta); //A1/B1/F1

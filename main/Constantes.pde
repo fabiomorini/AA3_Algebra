@@ -1,6 +1,6 @@
 Camara camara;
 Planeta planeta;
-Esfera esfera;
+Luna luna;
 Orbita orbita;
 Bezier bezier1, bezier2;
 UI ui;
@@ -8,7 +8,7 @@ UI ui;
 static int screenX = 1000;
 static int screenY = 1000;
 
-int tamPlaneta = 50;
+int tamPlaneta = 150;
 int tamEsfera = 50;
 float incT = 0.04;
 float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?

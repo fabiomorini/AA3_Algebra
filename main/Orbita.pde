@@ -16,11 +16,11 @@ class Orbita{
     bezier1.pintar_curva();
     bezier2.pintar_curva();
     
-    if(!esfera.mitad){
-      esfera.seguirBezier1();
+    if(!luna.mitad){
+      luna.seguirBezier1();
     }
     else{
-      esfera.seguirBezier2();
+      luna.seguirBezier2();
     }
     popMatrix();
   }
