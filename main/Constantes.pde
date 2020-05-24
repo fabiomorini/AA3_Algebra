@@ -12,6 +12,7 @@ static int screenY = 1000;
 PImage planetaImg;
 PImage lunaImg;
 PImage espacioImg;
+PShape dog;
 
 int tamPlaneta = 300;
 int tamLuna = 150;

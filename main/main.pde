@@ -22,7 +22,8 @@ void setup(){
   
   planetaImg = loadImage("doge.jpg");
   lunaImg = loadImage("nic.jpg");
-  espacioImg = loadImage("espacio.jpg");
+  espacioImg = loadImage("shrek.jpg");
+  dog = loadShape("dog.obj");
   frameRate(60);
   
   //ui.setButtons();
@@ -39,5 +40,6 @@ void draw(){
   camara.camaraRotation();
   planeta.draw_planeta();
   orbita.executeOrbita();
+  orbita.dibuja_perro();
   espacio.draw_espacio();
 }
