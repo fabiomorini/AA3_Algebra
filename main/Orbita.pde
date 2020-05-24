@@ -54,6 +54,7 @@ class Orbita{
     else{
       colisionPerroLuna = false;
     }
+    dog.setTexture(planetaImg);
     translate(pos.x,pos.y);
     rotateX(180);
     rotateY(3.4);
