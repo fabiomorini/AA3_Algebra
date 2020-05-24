@@ -7,10 +7,19 @@ class Luna{
   float incremento_de_u1 = 0.0;
   float incremento_de_u2 = 0.0;
   boolean mitad = false;
+  PShape luna;
+  
+  void luna_shape(){
+    noStroke();
+    noFill();
+    luna = createShape(SPHERE, tamLuna);
+    luna.setTexture(lunaImg);
+  }
   
   void drawLuna(){
+    luna_shape();
     fill(255);
-    sphere(tamEsfera);
+    shape(luna);
     noFill();
   }
   

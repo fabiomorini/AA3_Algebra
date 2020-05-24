@@ -8,8 +8,12 @@ UI ui;
 static int screenX = 1000;
 static int screenY = 1000;
 
-int tamPlaneta = 150;
-int tamEsfera = 50;
+PImage planetaImg;
+PImage lunaImg;
+
+int tamPlaneta = 300;
+int tamLuna = 150;
+
 float incT = 0.04;
 float numPuntosBezier = 1000.0; //Cuantos puntos queremos pintar?
 
