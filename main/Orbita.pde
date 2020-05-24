@@ -13,6 +13,15 @@ class Orbita{
     noStroke();
   }
   
+  void setPuntosOrbitaLuna(){
+    //Indicamos los puntos que tendra Bezier
+  setPuntosBezier1(new PVector(0,-ellipseY),
+  new PVector(ellipseX,-ellipseY),new PVector(ellipseX,ellipseY),new PVector(0,ellipseY));
+  
+  setPuntosBezier2(new PVector(0,ellipseY),
+  new PVector(-ellipseX,ellipseY),new PVector(-ellipseX,-ellipseY),new PVector(0,-ellipseY));
+  }
+  
   void executeOrbita(){
     drawOrbita();
     pushMatrix();

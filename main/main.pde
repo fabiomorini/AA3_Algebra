@@ -8,12 +8,7 @@ void setup(){
   orbita = new Orbita();
   ui = new UI();
   espacio = new Espacio(); //<>// //<>// //<>//
-  //Indicamos los puntos que tendra Bezier
-  setPuntosBezier1(new PVector(0,-ellipseY),
-  new PVector(ellipseX,-ellipseY),new PVector(ellipseX,ellipseY),new PVector(0,ellipseY));
-  
-  setPuntosBezier2(new PVector(0,ellipseY),
-  new PVector(-ellipseX,ellipseY),new PVector(-ellipseX,-ellipseY),new PVector(0,-ellipseY));
+  orbita.setPuntosOrbitaLuna();
   
   //Llamada al constructor de la curva
   bezier1 = new Bezier(puntoBezier1, colorBezier, numPuntosBezier);
