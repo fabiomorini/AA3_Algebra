@@ -8,11 +8,15 @@ void setup(){
   ui = new UI();
   
   //Indicamos los puntos que tendra Bezier //<>//
-  setPuntosBezier(new PVector(-600,0),
-  new PVector(850,-2000),new PVector(850,2000),new PVector(-600,0));
+  setPuntosBezier1(new PVector(0,500),
+  new PVector(-650,500),new PVector(-650,-500),new PVector(0,-500));
+  
+  setPuntosBezier2(new PVector(0,-500),
+  new PVector(650,-500),new PVector(650,500),new PVector(0,500));
   
   //Llamada al constructor de la curva
-  bezier = new Bezier(puntoBezier, colorBezier, numPuntosBezier);
+  bezier1 = new Bezier(puntoBezier1, colorBezier, numPuntosBezier);
+  bezier2 = new Bezier(puntoBezier2, colorBezier, numPuntosBezier);
   
   frameRate(60);
   planeta.setCoordsPlaneta();
