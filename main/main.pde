@@ -1,6 +1,6 @@
 
 void setup(){
-  //size(500,500, P3D);  
+  ////size(500,500, P3D);  
   fullScreen(P3D);
   camara = new Camara();
   planeta = new Planeta();
@@ -8,8 +8,7 @@ void setup(){
   orbita = new Orbita();
   ui = new UI();
   espacio = new Espacio(); //<>// //<>//
-   //<>// //<>//
-  //Indicamos los puntos que tendra Bezier //<>//
+  //Indicamos los puntos que tendra Bezier
   setPuntosBezier1(new PVector(0,-500),
   new PVector(650,-500),new PVector(650,500),new PVector(0,500));
   
@@ -24,8 +23,6 @@ void setup(){
   lunaImg = loadImage("nic.jpg");
   espacioImg = loadImage("espacio.jpg");
   frameRate(60);
-  
-  //ui.setButtons();
 }
 
 void draw(){
@@ -34,8 +31,6 @@ void draw(){
   background(8,22,42);
   lights();
   ui.drawUI();
-  //ui.numerosUI();
-  //ui.drawLateralUI();
   camara.camaraRotation();
   planeta.draw_planeta();
   orbita.executeOrbita();
