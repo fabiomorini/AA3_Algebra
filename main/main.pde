@@ -7,7 +7,9 @@ void setup(){
   luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-  espacio = new Espacio(); //<>// //<>// //<>//
+  espacio = new Espacio(); //<>//
+ 
+  //Configurar los puntos de bezier que hacen que la luna siga una orbita
   orbita.setPuntosOrbitaLuna();
   
   //Llamada al constructor de la curva

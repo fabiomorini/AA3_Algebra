@@ -43,23 +43,3 @@ void setPuntosBezier2(PVector p1, PVector p2, PVector p3, PVector p4){
   puntoBezier2[2] = p3; //Bezier no pasa por el tercero
   puntoBezier2[3] = p4; //Bezier si pasa por el ultimo
 }
-
-//Variables para botones simples
-//Parametros botones grupo 1
-PVector buttonG1Size;  //Tamanyo del boton
-color buttonG1Color; //Color 1
-color buttonG1Highlight; //Color 2
-
-//Parametros botones grupo 3
-PVector buttonG3Size;  //Tamanyo del boton
-color buttonG3Color; //Color 1
-color buttonG3Highlight; //Color 2
-
-//Variables para botones activables/ desactivables
-//Parametros botones grupo 2
-color buttonSalirColor; //Color 1
-color selectableButtonColor2; //Color 1 alternativo
-color buttonSalirHighlight; //Color 2
-color selectableButtonHighlight2; //Color 2 alternativo
-
-boolean selectableLateralUIButtonEnabled = false; //Booleana para el boton que despliega el menu lateral dentro de la simulacion
