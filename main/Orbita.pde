@@ -61,6 +61,7 @@ class Orbita{
     scale(tamPerro);
     fill(255);
     shape(dog);
+    noFill();
     popMatrix();
   }
 }

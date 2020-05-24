@@ -1,3 +1,5 @@
+import ddf.minim.*;
+
 Camara camara;
 Planeta planeta;
 Luna luna;
@@ -5,6 +7,8 @@ Orbita orbita;
 Bezier bezier1, bezier2;
 UI ui;
 Espacio espacio;
+Minim minim;
+AudioPlayer player;
 
 static int screenX = 1000;
 static int screenY = 1000;

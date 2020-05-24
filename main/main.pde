@@ -7,7 +7,11 @@ void setup(){
   luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-  espacio = new Espacio(); //<>// //<>//
+  espacio = new Espacio(); //<>//
+  minim = new Minim(this);
+  
+  // Load a soundfile from the /data folder of the sketch and play it back
+  player = minim.loadFile("dorime.mp3");
  
   //Configurar los puntos de bezier que hacen que la luna siga una orbita
   orbita.setPuntosOrbitaLuna();
@@ -34,4 +38,7 @@ void draw(){
   orbita.executeOrbita();
   orbita.dibuja_perro();
   espacio.draw_espacio();
+  if(!player.isPlaying() && colisionPerroLuna){
+    player.play();
+  }
 }
