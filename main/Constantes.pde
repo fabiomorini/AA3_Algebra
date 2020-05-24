@@ -3,6 +3,7 @@ Planeta planeta;
 Esfera esfera;
 Orbita orbita;
 Bezier bezier;
+UI ui;
 
 static int screenX = 1000;
 static int screenY = 1000;
