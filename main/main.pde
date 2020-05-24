@@ -32,6 +32,7 @@ void draw(){
   camara.camaraRotation();
   planeta.draw_planeta();
   orbita.executeOrbita();
+  //nueva_pos();
   orbita.dibuja_perro();
   espacio.draw_espacio();
 }

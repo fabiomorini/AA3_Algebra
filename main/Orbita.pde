@@ -1,8 +1,7 @@
 class Orbita{
   
   float dist;
-  
-  
+
   void drawOrbita(){
     int radio = 1000;
     stroke(0,255,0);
@@ -39,11 +38,14 @@ class Orbita{
   }
   
   void dibuja_perro(){
+    PVector pos = haciaPunto(luna.punto);
+    
     pushMatrix();
-    translate(1000,1000);
+    //translate(1000,1000);
+    translate(pos.x*500,pos.y*500);
     rotateX(180);
     rotateY(3.4);
-    //rotateZ(180 + rot);
+    rotateZ(180 + rot);
     scale(10);
     fill(255);
     shape(dog);
