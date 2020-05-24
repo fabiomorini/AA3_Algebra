@@ -7,7 +7,8 @@ void setup(){
   luna = new Luna();
   orbita = new Orbita();
   ui = new UI();
-   //<>// //<>// //<>// //<>//
+  espacio = new Espacio(); //<>// //<>//
+   //<>// //<>//
   //Indicamos los puntos que tendra Bezier //<>//
   setPuntosBezier1(new PVector(0,-500),
   new PVector(650,-500),new PVector(650,500),new PVector(0,500));
@@ -21,6 +22,7 @@ void setup(){
   
   planetaImg = loadImage("doge.jpg");
   lunaImg = loadImage("nic.jpg");
+  espacioImg = loadImage("espacio.jpg");
   frameRate(60);
   
   //ui.setButtons();
@@ -37,4 +39,5 @@ void draw(){
   camara.camaraRotation();
   planeta.draw_planeta();
   orbita.executeOrbita();
+  espacio.draw_espacio();
 }

@@ -4,12 +4,14 @@ Luna luna;
 Orbita orbita;
 Bezier bezier1, bezier2;
 UI ui;
+Espacio espacio;
 
 static int screenX = 1000;
 static int screenY = 1000;
 
 PImage planetaImg;
 PImage lunaImg;
+PImage espacioImg;
 
 int tamPlaneta = 300;
 int tamLuna = 150;
