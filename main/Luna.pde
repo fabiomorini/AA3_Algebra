@@ -32,7 +32,7 @@ class Luna{
     
     pushMatrix();
     translate(punto.x,punto.y,0);
-    rot += 0.01;
+    rot += 0.008;
     rotateX(-10);
     rotateY(10+rot);
     drawLuna();
@@ -52,7 +52,7 @@ class Luna{
     
     pushMatrix();
     translate(punto.x,punto.y,0);
-    rot += 0.01;
+    rot += 0.008;
     rotateX(-10);
     rotateY(10+rot);
 
