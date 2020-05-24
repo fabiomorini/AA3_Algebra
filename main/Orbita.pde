@@ -44,12 +44,16 @@ class Orbita{
     if((posPerro.x <= pos.x && posPerro.x+tamPerro >= pos.x+tamLuna) ||
     (posPerro.x >= pos.x && posPerro.x+tamPerro <= pos.x+tamLuna)){
       pos.x -= 10;
+      colisionPerroLuna = true;
     }
     if((posPerro.y <= pos.y && posPerro.y+tamPerro >= pos.y+tamLuna) ||
     (posPerro.y >= pos.y && posPerro.y+tamPerro <= pos.y+tamLuna)){
       pos.y -= 10;
+      colisionPerroLuna = true;
     }
-    
+    else{
+      colisionPerroLuna = false;
+    }
     translate(pos.x,pos.y);
     rotateX(180);
     rotateY(3.4);

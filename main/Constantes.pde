@@ -17,6 +17,7 @@ PShape dog;
 int tamPlaneta = 300;
 int tamLuna = 150;
 int tamPerro = 10;
+boolean colisionPerroLuna = false;
 
 float incT = 0.04;
 float rot = 1;
