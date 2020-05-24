@@ -1,4 +1,8 @@
 class Orbita{
+  
+  float dist;
+  
+  
   void drawOrbita(){
     int radio = 1000;
     stroke(0,255,0);
