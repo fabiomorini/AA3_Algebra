@@ -1,16 +1,14 @@
 PVector posPerro = new PVector(0,0,0);
 PVector velPerro = new PVector(0,0,0);
 PVector accelPerro = new PVector(0,0,0);
-float masaPerro = 0;
-float maxVel = 1.0;
-float maxAccel = 0.5;
+int separacion = 500;
 
 PVector haciaPunto(PVector p){
   PVector vPunto = new PVector(0,0,0);
   vPunto = vectorUnitario(posPerro, p);
-  accelPerro.x = vPunto.x;
-  accelPerro.y = vPunto.y;
-  accelPerro.z = vPunto.z;
+  accelPerro.x = vPunto.x*separacion;
+  accelPerro.y = vPunto.y*separacion;
+  accelPerro.z = vPunto.z*separacion;
   
   return accelPerro;
 }
@@ -33,17 +31,4 @@ PVector vectorUnitario(PVector pos1, PVector pos2){
   vector_calculado.z /= modulo;
 
   return vector_calculado;
-}
-
-void applyForce(PVector acel) { // suma de fuerzas: Aceleración   
-  acel.x = acel.x/(incT*masaPerro);
-  acel.y = acel.y/(incT*masaPerro);
-  acel.z = acel.z/(incT*masaPerro);
-}
-
-void nueva_pos() { // para actualizar la posición
-  velPerro.add(accelPerro);
-  velPerro.limit(maxVel);
-  posPerro.add(velPerro);
-  accelPerro.mult(0);
 }

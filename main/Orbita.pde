@@ -42,7 +42,7 @@ class Orbita{
     
     pushMatrix();
     //translate(1000,1000);
-    translate(pos.x*500,pos.y*500);
+    translate(pos.x,pos.y);
     rotateX(180);
     rotateY(3.4);
     rotateZ(180 + rot);
