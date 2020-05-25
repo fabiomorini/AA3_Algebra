@@ -1,9 +1,16 @@
 # AA3_Algebra
 
+Extensión:
+Para el funcionamiento correcto de la simulación se necesita la herramienta minim, 
+una de las herramientas más populares para el audio en processing.
+
 Funcionamiento:
-Presionando la tecla "1", muestra información de debug.
+Presionando la tecla "1" se muestra información de debug.
+en el menú de debug, presionando la tecla "3" se puede aumentar la velocidad
+de la simulación.
 Las flechas permiten cambiar la posición de la cámara.
 La animación se ejecuta automáticamente.
+Con la rueda del ratón se puede hacer zoom al planeta.
 
 Descripción:
 Animación con dos curvas Bezier que hacen que una luna gire al rededor de un planeta.
