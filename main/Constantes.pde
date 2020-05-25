@@ -22,6 +22,7 @@ int tamPlaneta = 300;
 int tamLuna = 150;
 int tamPerro = 5;
 boolean colisionPerroLuna = false;
+boolean fastSimulation = false;
 
 float incT = 0.04;
 float rot = 1;

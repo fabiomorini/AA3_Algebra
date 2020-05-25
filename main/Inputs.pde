@@ -40,6 +40,15 @@ void keyPressed(){
   if(keyCode == '1' && released){
     ui.debugMenu = !ui.debugMenu;
   }
+  
+  if(keyCode == '2' && released){
+    bezier1.drawBezier = !bezier1.drawBezier;
+    bezier2.drawBezier = !bezier2.drawBezier;
+  }
+  
+  if(keyCode == '3' && released){
+    fastSimulation = !fastSimulation;
+  }
 }
 
 void keyReleased(){

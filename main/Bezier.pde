@@ -8,6 +8,7 @@ class Bezier{
   PVector[] coeficientes;
   color color_curva;
   float numero_de_puntos_a_pintar;
+  boolean drawBezier = false;
   
   //Constructor
   Bezier(PVector[] pc, color c, float num){

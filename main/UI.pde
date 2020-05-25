@@ -20,9 +20,18 @@ class UI{
       else{
         text("El perro colisiona con la luna? No",30,230);
       }
+      text("Draw Bezier: Press Numeric Key 2",30,250);
+      
+      if(fastSimulation){
+        text("Fast Simulation: Press Numeric Key 3. Active",30,270);
+      }
+      else{
+        text("Fast Simulation: Press Numeric Key 3. Inactive",30,270);
+      }
     }
     else{
       text("Show info: Press Numeric Key 1",30,30);
+      text("Draw Bezier: Press Numeric Key 2",30,50);
     }
   }
 }

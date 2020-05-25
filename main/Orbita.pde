@@ -22,11 +22,17 @@ class Orbita{
   }
   
   void executeOrbita(){
-    drawOrbita();
+    //drawOrbita();
     pushMatrix();
     rotateX(180);
-    bezier1.pintar_curva();
-    bezier2.pintar_curva();
+    
+    if(bezier1.drawBezier){
+      bezier1.pintar_curva();
+    }
+
+    if(bezier2.drawBezier){
+      bezier2.pintar_curva();
+    }
     
     if(!luna.mitad){
       luna.seguirBezier1();
@@ -35,19 +41,24 @@ class Orbita{
       luna.seguirBezier2();
     }
     popMatrix();
+    
+    if(!fastSimulation && ui.debugMenu){
+      velocidadEsfera = 0.2;
+    }
+    if(fastSimulation && ui.debugMenu){
+      velocidadEsfera = 2.0;
+    }
   }
   
   void dibuja_perro(){
     PVector pos = haciaPunto(luna.punto);
     
     pushMatrix();
-    if((posPerro.x <= pos.x && posPerro.x+tamPerro >= pos.x+tamLuna) ||
-    (posPerro.x >= pos.x && posPerro.x+tamPerro <= pos.x+tamLuna)){
+    if(((posPerro.x <= pos.x && posPerro.x+tamPerro >= pos.x+tamLuna) ||
+    (posPerro.x >= pos.x && posPerro.x+tamPerro <= pos.x+tamLuna)) ||
+    ((posPerro.y <= pos.y && posPerro.y+tamPerro >= pos.y+tamLuna) ||
+    (posPerro.y >= pos.y && posPerro.y+tamPerro <= pos.y+tamLuna))){
       pos.x -= 10;
-      colisionPerroLuna = true;
-    }
-    if((posPerro.y <= pos.y && posPerro.y+tamPerro >= pos.y+tamLuna) ||
-    (posPerro.y >= pos.y && posPerro.y+tamPerro <= pos.y+tamLuna)){
       pos.y -= 10;
       colisionPerroLuna = true;
     }
