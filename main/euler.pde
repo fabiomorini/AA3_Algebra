@@ -1,6 +1,6 @@
 PVector posPerro = new PVector(0,0,0);
 PVector accelPerro = new PVector(0,0,0);
-int separacion = 500;
+int separacion = 700;
 
 PVector haciaPunto(PVector p){
   PVector vPunto = new PVector(0,0,0);
